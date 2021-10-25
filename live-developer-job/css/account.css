@@ -1,0 +1,223 @@
+
+main{
+    display: grid;
+    grid-template-columns: 1.5fr .6fr;
+    width:90%;
+    margin:auto;
+ column-gap: 100px;
+   
+ filter: drop-shadow(2px 50px 20px rgba(8, 18, 28));
+    
+}
+.bg{
+    background-color: rgba(8, 18, 28,0.7);
+    top:70px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index:1;
+    height: 100vh;
+}
+.bg h1{
+    position:absolute;
+    color:chartreuse;
+    top:80px;
+    opacity: .8;
+    font-size: 40px;
+     left: 2%; 
+     max-width: 800px;
+    z-index: 10;
+    border-bottom: 1px solid white;
+    padding:10px 20px;
+    z-index: 0;
+    
+    
+
+}
+.left{
+    padding-right:20px ;
+     margin: 250px 0px 100px 0px;
+     
+    
+    
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.button span{
+    margin:0px 10px;
+    font-size: 40px;
+}
+.button button{
+    border:none;
+    font-size:18px;
+    padding: 10px 20px;
+    width:180px;
+    background: #3060ff;
+    color:white;
+    
+    
+    overflow:none;
+}
+.google{
+    display: flex;
+    align-items: center;
+    color: black;
+     cursor: pointer; 
+    
+    width: 50%;
+    margin:auto;
+    background-color: whitesmoke;
+}
+.google-logo{
+width:50px;
+height:50px;
+border-right: 2px solid  gray
+}
+.google-logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.google span{
+    padding: 0px 5px;
+    font-size: 15px;
+}
+.facebook{
+    margin-top: 20px;
+}
+.right{
+    
+    margin-top: 100px;
+    height: 440px;
+    border:1px solid black;
+    border-radius:10px ;
+
+
+    
+    
+    background-color: rgba(8, 18, 28,0.5);
+
+}
+.hd{
+    border-bottom: 1px solid gray;
+    opacity: 0.7;
+}
+
+
+.hd p{
+    margin-left:3%;
+
+}
+.login-image{
+
+    width:80px;
+    height:80px;
+    
+    display: flex;
+    justify-content: center;
+    
+    margin: auto;
+    
+}
+.login-image>img{
+    width:100%;
+    height:100%;
+    object-fit:cover ;
+    border-radius: 50%;
+    margin: 20px 0px;
+}
+form{
+  margin-top: 30px;
+    margin-left: 10%;
+    opacity: 0.6;
+}
+form label{
+    font-size: 13px;
+}
+form input{
+    margin:8px 0px;
+    height: 25px;
+    width:75%;
+    border:none;
+    border:2px solid whitesmoke;
+
+}
+form input:focus-visible{
+    outline: 1px solid #3060ff;
+    
+
+}
+.log button {
+    height:30px;
+    color:white;
+    border:none;
+    font-size:15px;
+    width:40%;
+    background: #3060ff;
+    color:white;
+    border-radius: 5px;
+}
+.log button a{
+    text-decoration: none;
+    color:white;
+}
+.log span{
+    font-size:25px;
+}
+.log a{
+    font-size: 13px;
+    cursor: pointer;
+    color: blue;
+}
+@media screen and (max-width:600px) {
+
+
+    main{
+        display: grid;
+        grid-template-columns: .7fr;
+    
+    }
+    .bg{
+        background-color: rgba(8, 18, 28,0.7);
+    
+        top:55px;
+        left:0px;
+        right: 0px;
+        bottom: 0px;
+        z-index:1;
+    }
+    .left{
+        padding-right:20px ;
+
+          width:330px;
+         margin-top: 270px;
+    
+    
+
+    }
+
+    .google{
+        display: flex;
+        align-items: center;
+        color: black;
+      
+          
+        width: 93%;
+        margin:auto;
+        background-color: whitesmoke;
+    }
+    .facebook{
+        margin-top: 20px;
+    }
+    .right{
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+
+}

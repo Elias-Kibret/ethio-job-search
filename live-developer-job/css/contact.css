@@ -1,0 +1,131 @@
+body{
+    background:none;
+    background-color: black;
+    z-index: 10;
+}
+.bg{
+    background-image: url("/images/contact3.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+    
+    position: fixed;
+    top:10px;
+    right:-10px;
+    left:0px;
+    bottom: 0px;
+    width:100vw; 
+    height: 100vh; 
+    z-index: -1;
+
+    object-fit: contain;
+
+}
+.contact-form{
+    display: flex;
+    margin-top:30px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    
+}
+.head{
+    z-index: 1;
+    margin-top: 300px;;
+    padding: 10px;
+
+    border:1px solid gray;
+    overflow: hidden;
+
+    font-size: 20px;
+    display: flex;
+    margin-left:5%;
+    align-items: center;
+    
+    background-color: rgba(8, 18, 28,0.9);
+    
+    width:30%;
+    margin-bottom:300px;
+
+}
+.contact-form .form{
+    border-radius: 0px;
+    background:white;
+    opacity: 0.8;
+    color:black;
+    padding:40px 20px;
+    
+}
+.contact-form .form label{
+    color: #3060ff;
+    color: black;
+    margin: 5px;
+
+}
+.contact-form .form input{
+    margin:10px 5px;
+    width:70%;
+    height:30px;
+    outline: none;
+}
+
+
+.contact-form .form .submit{
+    background-color: #3060ff;
+    color: white;
+    border: none;
+    width:50%;
+    
+    margin: auto;
+}
+textarea{
+    resize: none;
+    width:70%;
+    outline: none;
+}
+textarea:focus-visible{
+    border:1px solid #3060ff;
+    outline: #3060ff;
+    
+}
+
+@media screen and (max-width:600px) {
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .head{
+        z-index: 1;
+        margin: auto;
+        margin-top: 60px;;
+        
+         
+        border:1px solid gray;
+        overflow: hidden;
+         height: 50px;
+        font-size: 10px;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(8, 18, 28,0.9);
+    
+        width:70%;
+        margin-bottom:30px;
+        border-radius: 0px;
+
+    }
+    textarea{
+        width:70%;
+        border:none;
+        border: 1px solid black;
+        outline: none;
+    }
+    .form form{
+
+        margin-left:0px;
+        
+
+    }
+
+}
